@@ -1,0 +1,19 @@
+CREATE TABLE `usuario` (
+  `iduser` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(32) NOT NULL,
+  `sobrenome` VARCHAR(32) NOT NULL,
+  `idade` int(11),
+  `endereco` VARCHAR(45),
+  `bairro` VARCHAR(45),
+  `cep` VARCHAR(45),
+  `telefone` VARCHAR(15),
+  `celular` VARCHAR(15),
+  `email` VARCHAR(60) NOT NULL UNIQUE,
+  `usuario` VARCHAR(15) NOT NULL UNIQUE,
+  `senha` VARCHAR(15) NOT NULL,
+  `adm` int(1) NOT NULL,
+  PRIMARY KEY (`iduser`));
+
+
+
+http://localhost/phpmyadmin/

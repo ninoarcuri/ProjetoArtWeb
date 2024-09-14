@@ -1,0 +1,166 @@
+-----------------------------/GlassFish/-----------------------------------------------
+
+Nome BD: ArtWebBD
+user: artweb
+senha: artweb123
+
+
+
+CREATE TABLE "tb_usuario"
+(
+    "idUser" INT NOT NULL PRIMARY KEY
+        GENERATED ALWAYS AS IDENTITY
+        (START WITH 1, INCREMENT BY 1 ),
+    	"nomeUsuario" VARCHAR(25),
+   	"sobrenomeUsuario" VARCHAR(50),
+	"data_nasc" date,
+	"endereco" VARCHAR(50)NOT NULL,
+	"bairro" VARCHAR(50)NOT NULL,
+	"cep" VARCHAR(50)NOT NULL,
+	"telefone" VARCHAR(15),
+	"celular" VARCHAR(15),
+	"email" VARCHAR(50),
+	"login" VARCHAR(15),
+	"senha" VARCHAR(15),
+	"adm" Boolean
+);
+
+
+CREATE TABLE "tb_servico"
+(
+	"idServ" INT NOT NULL PRIMARY KEY
+	GENERATED ALWAYS AS IDENTITY
+	(START WITH 1, INCREMENT BY 1),
+	"nome_servico" VARCHAR(40) NOT NULL,
+	"descricao" VARCHAR(500) NOT NULL,
+	"tipo" VARCHAR(20) NOT NULL,
+	"valor" DECIMAL(10,2) NOT NULL
+);
+
+
+CREATE TABLE "tb_servcontratado"
+(
+	"idServC" INT NOT NULL PRIMARY KEY
+	GENERATED ALWAYS AS IDENTITY
+	(START WITH 1, INCREMENT BY 1),
+	CONSTRAINT fk_nservico FOREIGN KEY("nome_servico")
+	REFERENCES "tb_servico"
+	CONSTRAINT fk_descricao FOREIGN KEY("descricao")
+	REFERENCES "tb_servico"
+	CONSTRAINT fk_tipo FOREIGN KEY("tipo")
+	REFERENCES "tb_servico"
+	CONSTRAINT fk_valor FOREIGN KEY("valor")
+	REFERENCES "tb_servico"
+	CONSTRAINT fk_idUser FOREIGN KEY("idUser")
+	REFERENCES "tb_usuario"
+);
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+Hospedagem P (Hostgatori)
+
+Hospede um dominio e subdominios ilimitados
+100 GB SSD para guardar arquivos de seu site ou e-mails.
+Certificado de Segurança SSL
+Navegação segura com SSL Grátis para todas as suas páginas
+Contas de e-mail Ilimitadas
+Atendimento especializado
+Suporte de alto nível, em português, 24h por dia
+Com bancos de imagens grátis e integrações prontas.
+
+Mensal
+R$: 10.69
+
+____________________________________________________
+
+Hospedagem M (Hostgatori)
+
+Hospede diversos dominios no mesmo plano
+100 GB SSD para guardar arquivos de seu site ou e-mails.
+Certificado de Segurança SSL
+Navegação segura com SSL Grátis para todas as suas páginas
+Contas de e-mail Ilimitadas
+Atendimento especializado
+Suporte de alto nível, em português, 24h por dia
+Com bancos de imagens grátis e integrações prontas.
+
+Mensal
+R$: 15.69
+
+____________________________________________________
+
+Hospedagem G (Hostgatori)
+
+Hospedagem para projetos avançados
+150 GB SSD para guardar arquivos de seu site ou e-mails.
+2x mais poder de processamento
+Certificado de Segurança SSL
+Navegação segura com SSL Grátis para todas as suas páginas
+Contas de e-mail Ilimitadas
+Atendimento especializado
+Suporte de alto nível, em português, 24h por dia
+Com bancos de imagens grátis e integrações prontas.
+
+Mensal
+R$: 30.50
+
+____________________________________________________
+
+Desenvolvimento de Website Simples
+
+Com Registro de domínio incluso, certificados e contratação de serviços
+Entraremos em contato para maiores detalhes, valores podem alterar de acordo com o site.
+
+Unico
+R$: 1000.50
+
+____________________________________________________
+
+Desenvolvimento de Website Complexos
+
+Com Registro de domínio incluso, certificados e contratação de serviços.
+Entraremos em contato para maiores detalhes, valores podem alterar de acordo com o site.
+
+Unico
+R$: 8000.60
+
+____________________________________________________
+
+E-mails Corporativos
+
+Tenha um e-mail personalizado @suaempresa
+Conquiste a confiança dos clientes com endereços de e-mail comerciais para todas as pessoas da empresa no seu domínio, como jubileu@suaempresa e renan@suaempresa. Também é possível criar listas de e-mails para grupos, como vendas@suaempresa.
+
+Unico
+R$: 200.40
+
+____________________________________________________
+
+Sistema de Controle Web
+
+Emissão de nota fiscal pode ser simples
+Com o nosso sistema, você tem mais rapidez para emitir os três principais tipos de notas fiscais (NFe, NFSe e NFCe), não precisa informar os dados mais do que uma vez, os impostos são calculados automaticamente e muito mais!
+Integração com plataformas de e-commerce e marketplaces de forma fácil e rápida
+Gestão de estoque como você nunca viu.
+
+
+Mensal
+R$: 800.20
+
+____________________________________________________
+
+Loja Virtual
+
+Temas incríveis, responsivos e personalizáveis
+Você tem total controle sobre a aparência do seu site, do layout até o conteúdo e as cores, mesmo sem ter experiência com design.
+Uma solução de site de e-commerce fácil de criar e gerenciar
+Marketing, pagamentos, checkout seguro e frete: deixe tudo com a Shopify.
+A Shopify ajuda você a vender de qualquer lugar, seja na internet, nas redes sociais, na loja física e onde mais você quiser. 
+
+Mensal
+R$: 100.10
+

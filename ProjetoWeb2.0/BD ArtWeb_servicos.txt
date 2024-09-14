@@ -1,0 +1,14 @@
+CREATE TABLE `servicos` (
+  `idServico` INT NOT NULL AUTO_INCREMENT,
+  `nomeServico` VARCHAR(32) NOT NULL,
+  `descricao` VARCHAR(32) NOT NULL,
+  `valor` double(11),
+  `tipo` VARCHAR(10),
+   PRIMARY KEY (`idServico`));
+
+
+
+http://localhost/phpmyadmin/
+
+
+tipo = mensal, valor unico

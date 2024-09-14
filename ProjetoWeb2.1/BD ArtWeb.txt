@@ -1,0 +1,56 @@
+-----------------------------/GlassFish/-----------------------------------------------
+
+Nome BD: ArtWebBD
+user: artweb
+senha: artweb123
+
+
+
+CREATE TABLE "tb_usuario"
+(
+    "idUser" INT NOT NULL PRIMARY KEY
+        GENERATED ALWAYS AS IDENTITY
+        (START WITH 1, INCREMENT BY 1 ),
+    	"nomeUsuario" VARCHAR(25),
+   	"sobrenomeUsuario" VARCHAR(50),
+	"data_nasc" date,
+	"endereco" VARCHAR(50)NOT NULL,
+	"bairro" VARCHAR(50)NOT NULL,
+	"cep" VARCHAR(50)NOT NULL,
+	"telefone" VARCHAR(15),
+	"celular" VARCHAR(15),
+	"email" VARCHAR(50),
+	"usuario" VARCHAR(15),
+	"senha" VARCHAR(15),
+	"adm" Boolean
+);
+
+
+CREATE TABLE "tb_servico"
+(
+	"idServ" INT NOT NULL PRIMARY KEY
+	GENERATED ALWAYS AS IDENTITY
+	(START WITH 1, INCREMENT BY 1),
+	"nome_servico" VARCHAR(40) NOT NULL,
+	"descricao" VARCHAR(100) NOT NULL,
+	"tipo" VARCHAR(20) NOT NULL,
+	"valor" DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE "tb_servcontratado"
+(
+	"idServC" INT NOT NULL PRIMARY KEY
+	GENERATED ALWAYS AS IDENTITY
+	(START WITH 1, INCREMENT BY 1),
+	CONSTRAINT fk_nservico FOREIGN KEY("nome_servico")
+	REFERENCES "tb_servico"
+	CONSTRAINT fk_descricao FOREIGN KEY("descricao")
+	REFERENCES "tb_servico"
+	CONSTRAINT fk_tipo FOREIGN KEY("tipo")
+	REFERENCES "tb_servico"
+	CONSTRAINT fk_valor FOREIGN KEY("valor")
+	REFERENCES "tb_servico"
+	CONSTRAINT fk_idUser FOREIGN KEY("idUser")
+	REFERENCES "tb_usuario"
+);
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/ProjetosJava/ProjetoWeb2.1/web/login.jsp</file>
+            <file>file:/D:/ProjetosJava/ProjetoWeb2.1/web/admClientes.jsp</file>
+            <file>file:/D:/ProjetosJava/ProjetoWeb2.1/web/cadastro.jsp</file>
+            <file>file:/D:/ProjetosJava/ProjetoWeb2.1/src/java/br/uninove/dao/UsuarioDAO.java</file>
+            <file>file:/D:/ProjetosJava/ProjetoWeb2.1/src/java/br/uninove/dao/ConnectionFactory.java</file>
+            <file>file:/D:/ProjetosJava/ProjetoWeb2.1/src/java/br/uninove/servlets/Login.java</file>
+            <file>file:/D:/ProjetosJava/ProjetoWeb2.1/src/java/br/uninove/servlets/Cadastro.java</file>
+            <file>file:/D:/ProjetosJava/ProjetoWeb2.1/src/java/br/uninove/model/Usuario.java</file>
+        </group>
+    </open-files>
+</project-private>

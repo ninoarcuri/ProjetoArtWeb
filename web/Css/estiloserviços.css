@@ -1,0 +1,197 @@
+div:hover > .btn { display: block; opacity: 1; transform: rotate(360); transition: all 1s; } .btn { text-align: center; margin: 0 auto; width: 100%; height: 40px; padding: 5px 0px; bottom: 0px; z-index: 999; cursor: pointer; opacity: 0.6; transition: all 1s; } .btn.absolute { position: absolute; } .btn > div { width: 100px; display: inline-block; } .btn .remove::before {    font-weight: 900; content: "\f05e"; font-family: "Font Awesome 5 Free"; font-size: 40px; color: #000; width: 100%; text-align: center; display: block; } .btn .remove::after { content: ""; font-family: calibri; font-size: 14px; color: #000; width: 100%; text-align: center; display: block; } .btn .add::before { font-weight: 900; content: "\f055"; font-family: "Font Awesome 5 Free"; font-size: 40px; color: #000; width: 100%; text-align: center; display: block; } .btn .add::after { content: "RETORNAR"; font-family: calibri; font-size: 16px; color: #000; width: 100%; text-align: center; display: block; } .btn.white *::before, .btn.white *::after { color: #fff !important; }
+
+.logo-pw div p:first-child a {
+    color: #fff;
+    font: 12px "Helvetica";
+    margin-top: -8px;
+    display: block;
+}
+
+.logo-pw div {
+}
+
+.logo-pw div a span {
+    color: transparent;
+}
+.logo-pw-total {
+    border-top: 1px solid #fff;
+    display: flex;
+    align-items: center;
+}
+.item.whats {
+    background: #2ba531;
+    border-radius: 30px;
+    padding: 10px 0px!important;
+    font-weight: bold;
+}
+
+.item.online {
+    background: #00b29c;
+    border-radius: 30px;
+    padding: 10px 0px!important;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.item.whats:hover {
+    background: #239529;
+    cursor: pointer;
+}
+
+.item.online:hover {
+    background: #048676;
+    cursor: pointer;
+}
+body {
+    overflow-x: hidden;
+}
+.item-logo-pw p:nth-child(2) a {
+}
+* {
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    border-radius: 1px;
+}
+
+#erro-total {
+    width: 700px;
+    height: 270px;
+    margin: 15px 0;
+}
+
+#imagem-centralizada {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#texto-404 {
+    width: 100%;
+    font-family: Calibri;
+    font-size: 22px;
+    text-align: center;
+}
+
+#aguarde {
+    width: 100%;
+    font-family: Calibri;
+    font-size: 19px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.page-404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.global {
+    margin: 0 auto;
+}
+
+.conteudo-pages {
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.texto-pages {
+    font: 15px/25px "Calibri";
+    color: #000;
+    text-align: justify;
+}
+
+.texto-pages h1 {
+    font: 25px "Calibri";
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.texto-pages h2 {
+    font: 20px "Calibri";
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.menu-resp {
+    display: none;
+}
+
+.swiper-container {
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 2px 4px -1px #b5b5b5;
+    transition: all 0.5s;
+}
+
+.box-02-total { background: #fff; } 
+.box-02 { width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around; }
+.box-02 .item {margin: 20px 0px;background: #004085; width: 311px;box-sizing: border-box;border: 2px solid rgba(251, 251, 251, 0.13);padding: 15px 10px;text-align: center;border-radius: 15px;} 
+.box-02 .item:hover {background:#0056b3} 
+.box-02 .item .img { width: 100%; height: 157px; overflow: hidden; } 
+.box-02 .item .titulo { font: 28px 'calibri'; color:#000 ; margin: 40px 0px; } 
+.box-02 .item .conteudo { font: 18px/30px 'calibri'; color: #000; margin: 40px 0px; } 
+.box-02 .item .entrar {} .box-02 .entrar {padding: 20px 70px;background: #72120B;margin: 0 auto;color: #fff;font: 20px 'calibri';display: table;transition: all 0.5s;border-radius: 8px;} 
+@media only screen and (max-width:1200px) {
+    * {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    .box-02-total *
+     {
+        max-width: 100%;
+    }
+    .swiper-container img {
+        max-width: auto;
+    }
+    .swiper-container {
+        height: 0;
+        transition: all 0.5s;
+    }
+    .conteudo-pages {
+        padding: 2%;
+    }
+    .topo > div {
+        width: 100%;
+        margin: 10px 0px;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width:980px) {
+ 
+
+@media only screen and (max-width: 600px){
+   
+div#wowslider-container1 {
+    display: none;
+}
+    .box-01 .conteudo .titulo {
+    font: 35px 'calibri';
+    text-align: center;
+}
+    .box-01 .conteudo .entrar {
+
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+    
+    
+}
+}
